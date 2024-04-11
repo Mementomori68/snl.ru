@@ -1,0 +1,572 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body:active {
+    color: blue;
+}
+html{
+}
+@font-face {
+    font-family: 'cyber';
+    src: url('myfont.woff') format('woff'), 
+         url('cyber.ttf') format('truetype');
+}
+body {
+  font-family: "cyber", "Arial", sans-serif;
+}
+body{background: url("rog-8-bit-u7-1920x1200.jpg") no-repeat center center fixed;; 
+    z-index: 1;
+    background-size: cover;
+    max-height: 120vh;
+    max-width: 100%;
+
+}
+
+header {
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    height: 10vh;
+    width: 100%;
+    z-index: 5;
+}
+
+#lev {
+    position: absolute;
+    left: 0vw;
+    top: 85vh;
+    width: 10%;
+    height: 20vh;
+    z-index: 3;
+}
+input {color: blue}
+input:focus {color: white}
+#str {
+    position: absolute;
+    left: 10%;
+    top: 13vh;
+    width: 87%;
+    height: 10vh;
+    z-index: 1;
+    color: white;
+}
+
+#sq {
+    position: absolute;
+    left: 21%;
+    top: 23vh;
+    width: 61vw;
+    height: 50vh;
+    z-index: 5;
+    color: white;
+    background-color: #fc033d;
+    border: blue 0.3vh solid;
+    border-radius: 10% 10%;
+    overflow: hidden;
+}
+    
+
+
+button.b, button.b::after 
+{
+    
+  width: 8.3vw;
+  height: 12vh;
+  font-size: 1.5vw;
+  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 8.8vh;
+  box-shadow: 6px 0vh 0vh #00E6F6;
+  outline: transparent;
+  position: relative;
+    
+}
+
+button.b::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  content: 'AVAILABLE NOW';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+button.b:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(1vh, 1vw);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-1vh, 1vw);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0vh, 5vw);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-2vh, 0vw);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(2vh, 0vw);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(2vh, 1vw);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-1vh, 1vw);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(2vh, -1vw);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-1vh, 0vw);
+  }
+  100 {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+
+#b1 {
+    width: 8.5vw;
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    left: 23%;
+    cursor:  pointer;
+    
+    
+}
+
+#b2{
+    width: 8.5vw;
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    left: 5%;
+    cursor:  pointer;
+    
+}
+
+#b3 {
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    left: 88%;
+    cursor:  pointer;
+}
+
+#b4 {
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    left: 72%;
+    cursor:  pointer;
+}
+
+.te {
+    text-align: center;
+    font-size: 2.3vw;    
+}
+.lll {
+    font-size: 2.5vh;
+    text-align: center;
+    padding: 1.5vh;
+    color:white;
+    
+}
+#lev2 {
+    position: absolute;
+    left: 0%;
+    top: 30vh;
+    width: 10%;
+    height: 45vh;
+    
+    
+}
+#tel {
+    width: 8vw;
+    height: 9vh;
+}
+#vk {
+    width: 8vw;
+    height: 9vh;
+}
+#tan{
+    width: 30vh;
+    height: 15vw;
+}
+
+.so{
+    position: absolute;
+     width: 9vw;
+    height: 13.3vh;
+    margin-left: 5%;
+    cursor:  pointer;
+}
+.soo{
+    position: absolute;
+      width: 9vw;
+    height: 13.3vh;
+    margin-left: 88%;
+    cursor:  pointer;
+}
+.sooo{
+    position: absolute;
+      width: 9vw;
+    height: 13.3vh;
+    margin-left: 72%;
+    cursor:  pointer;
+}
+.soooo{
+    position: absolute;
+     width: 9vw;
+    height: 13.3vh;
+    margin-left: 23%;
+    cursor:  pointer;
+}
+.ss{
+    position: absolute;
+    margin-left: 45%;
+    height: 16vh;
+    width: 17%;
+    cursor:  pointer;
+    transition: 1s; 
+}
+   .ss:hover {
+    transform: scale(1.2);
+   }
+
+.x{
+    cursor:  pointer;
+}
+
+.sh {
+    position: absolute;
+    width: 54%;
+    height: 90vh;
+    margin-left: 27%;
+
+}
+.jj{
+    text-align: center;
+    font-size: 1.55em;    
+}
+
+@media(min-width : 300px) and (max-width : 500px){
+    .jj{
+        font-size: 0.7em;
+     }
+    #b1 {
+    width:6em;
+    font-size: 0.4em;
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    height: 10em;
+    
+}
+
+#b2{
+   width:6em;
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    left: 5%;
+    cursor:  pointer;
+    font-size: 0.4em;
+    height: 10em;
+    
+}
+
+#b3 {
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    left: 88%;
+    cursor:  pointer;
+    width:6em;
+    font-size: 0.4em;
+    height: 10em;
+}
+
+#b4 {
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    left: 72%;
+    cursor:  pointer;
+    width:6em;
+    font-size: 0.4em;
+    height: 10em;
+}
+    .so{
+    position: absolute;
+     width: 3em;
+    height: 4.7em;
+    margin-left: 5%;
+    cursor:  pointer;
+}
+.soo{
+    position: absolute;
+     width: 3em;
+    height: 4.7em;
+    margin-left: 88%;
+    cursor:  pointer;
+}
+.sooo{
+    position: absolute;
+    width: 3em;
+    height: 4.7em;
+    margin-left: 72%;
+    cursor:  pointer;
+}
+.soooo{
+    position: absolute;
+     width: 3em;
+    height: 4.7em;
+    margin-left: 23%;
+    cursor:  pointer;
+}
+    .ss{
+    position: absolute;
+    margin-left: 41%;
+    height: 5em;
+    width: 7em;
+    cursor:  pointer;
+    transition: 1s; 
+}
+    .te {
+    text-align: center;
+    font-size: 1.2em;    
+}
+    
+     
+}
+
+@media(min-width : 500px) and (max-width : 700px){
+    .jj{
+        font-size: 1.5em;
+    }
+    .ss{
+    position: absolute;
+    margin-left: 45%;
+    height: 7em;
+    width: 7em;
+    cursor:  pointer;
+    transition: 1s; 
+}
+    .te {
+    text-align: center;
+    font-size: 2em;
+        
+}
+    #b1 {
+    width:11em;
+    font-size: 0.4em;
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    height: 10em;
+    
+}
+    #b2{
+   width:11em;
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    left: 5%;
+    cursor:  pointer;
+    font-size: 0.4em;
+    height: 10em;
+    
+}
+
+#b3 {
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    left: 88%;
+    cursor:  pointer;
+    width:11em;
+    font-size: 0.4em;
+    height: 10em;
+}
+    #b4 {
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    left: 72%;
+    cursor:  pointer;
+    width:11em;
+    font-size: 0.4em;
+    height: 10em;
+}
+    .so{
+    position: absolute;
+     width: 5em;
+    height: 4.7em;
+    margin-left: 5%;
+    cursor:  pointer;
+}
+.soo{
+    position: absolute;
+     width: 5em;
+    height: 4.7em;
+    margin-left: 88%;
+    cursor:  pointer;
+}
+.sooo{
+    position: absolute;
+    width: 5em;
+    height: 4.7em;
+    margin-left: 72%;
+    cursor:  pointer;
+}
+.soooo{
+    position: absolute;
+     width: 5em;
+    height: 4.7em;
+    margin-left: 23%;
+    cursor:  pointer;
+}
+    
+}
+    @media(max-width : 300px){
+        .jj{
+            font-size: 1em;
+        }
+    #b1 {
+    width:5em;
+    font-size: 0.5em;
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    height: 7em;
+    
+}
+
+#b2{
+   width:5em;
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    left: 5%;
+    cursor:  pointer;
+    font-size: 0.5em;
+    height: 7em;
+    
+}
+
+#b3 {
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    left: 88%;
+    cursor:  pointer;
+    width:5em;
+    font-size: 0.5em;
+    height: 7em;
+}
+
+#b4 {
+    font-family: "cyber", "Arial", sans-serif;
+    position: absolute;
+    top: 0.7vh;
+    left: 72%;
+    cursor:  pointer;
+    width:5em;
+    font-size: 0.5em;
+    height: 7em;
+}
+    .so{
+    position: absolute;
+     width: 2.5em;
+    height: 4em;
+    margin-left: 5%;
+    cursor:  pointer;
+}
+.soo{
+    position: absolute;
+     width: 2.5em;
+    height: 4em;
+    margin-left: 88%;
+    cursor:  pointer;
+}
+.sooo{
+    position: absolute;
+    width: 2.5em;
+    height: 4em;
+    margin-left: 72%;
+    cursor:  pointer;
+}
+.soooo{
+    position: absolute;
+     width: 2.5em;
+    height: 4em;
+    margin-left: 23%;
+    cursor:  pointer;
+}
+
+    .ss{
+    position: absolute;
+    margin-left: 45%;
+    height: 6em;
+    width: 5em;
+    cursor:  pointer;
+    transition: 1s; 
+}
+    .te {
+    text-align: center;
+    font-size: 1.5em;    
+}
+        
+        
+}
+
+.p1{
+    position: absolute;
+    width: 30vw;
+    height: 30vh;
+    left: 35%;
+    z-index: 100;
+    
+}
+.xxx{
+    height: 30vh;
+    width: 20vw
+}
